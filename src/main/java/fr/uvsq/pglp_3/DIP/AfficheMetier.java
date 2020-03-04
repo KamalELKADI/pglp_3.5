@@ -6,11 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class AfficheMetier implements AffichageMetier {
+	private static final Logger logger = LoggerFactory.getLogger(AfficheMetier.class);
 	/**
 	 * fonction pour l'affichage du log au début.
 	 */
 	public void afficheDebut() {
-		Logger logger = LoggerFactory.getLogger(AfficheMetier.class);
 	    logger.info(LocalDateTime.now()
 				+ " : Début de UneMethodeMetier");
 	}
@@ -18,7 +18,6 @@ public class AfficheMetier implements AffichageMetier {
 	 * fonction pour l'affichage du log à la fin.
 	 */
 	public void afficheFin() {
-		Logger logger = LoggerFactory.getLogger(AfficheMetier.class);
 	    logger.info(LocalDateTime.now()
 				+ " : Fin de UneMethodeMetier");
 	}

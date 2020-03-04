@@ -13,4 +13,6 @@ public class UneClassMetier {
 		//Traitements métiers
 		afficheMetier.afficheFin(); // log message
 	}
+	
+	
 }
